@@ -1,0 +1,35 @@
+@media only screen and (max-width: 767px) {
+	app-projects {
+		height: 30vh;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	app-projects {
+		height: 45vh;
+	}
+}
+
+app-projects {
+	cursor: pointer;
+	transition: 0.2s;
+	max-width: 15rem;
+	/*background-image: linear-gradient(to top, #09203f 0%, #537895 100%);  Eternal Constance */
+	/*background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); Midnight Bloom */
+	/*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); Winter Neva */
+	background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); /* New York */
+}
+
+app-projects:not(:first-child) {
+	margin-left: -5rem;
+}
+
+app-projects:hover {
+	/* overflow-y: scroll; */
+	transform: scale(1.1);
+	/* transform: translateY(-1rem); */
+}
+
+app-projects:hover ~ app-projects {
+	transform: translateX(6rem);
+}

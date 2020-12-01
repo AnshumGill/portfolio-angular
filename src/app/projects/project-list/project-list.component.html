@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="row d-flex justify-content-center my-3">
+		<div class="btn-group btn-group-toggle" data-toggle="buttons">
+			<label class="btn btn-outline-primary">
+				<input type="radio" name="type" [value]="all" [(ngModel)]="categoryValue" (change)="onChange()" /> All
+			</label>
+			<label class="btn btn-outline-primary">
+				<input type="radio" name="type" [value]="webdev" [(ngModel)]="categoryValue" (change)="onChange()" /> Webdev
+			</label>
+			<label class="btn btn-outline-primary">
+				<input type="radio" name="type" [value]="python" [(ngModel)]="categoryValue" (change)="onChange()" /> Python
+			</label>
+			<label class="btn btn-outline-primary">
+				<input type="radio" name="type" [value]="ml" [(ngModel)]="categoryValue" (change)="onChange()" /> ML/AI
+			</label>
+			<label class="btn btn-outline-primary">
+				<input type="radio" name="type" [value]="misc" [(ngModel)]="categoryValue" (change)="onChange()" /> Misc
+			</label>
+		</div>
+	</div>
+	<div class="row d-flex my-3">
+		<div class="card-container d-flex">
+			<ng-container *ngIf="categoryValue === 'all'; else picky">
+				<app-projects class="col p-2 text-light rounded shadow-lg" *ngFor="let project of projects" [project]="project"></app-projects>
+			</ng-container>
+			<ng-container #picky *ngFor="let project of projects">
+				<app-projects
+					class="col p-2 text-light rounded shadow-lg"
+					*ngIf="project.category === categoryValue"
+					[project]="project"
+				></app-projects>
+			</ng-container>
+		</div>
+	</div>
+</div>
