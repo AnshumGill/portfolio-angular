@@ -1,0 +1,29 @@
+<div class="bg-dark text-white ps-3 iso pt-3 h-100">
+	<div class="overlay-1"></div>
+
+	<p class="text-uppercase fw-light fs-c3">EXPLORER</p>
+	<button
+		class="btn btn-link text-reset text-decoration-none fs-c2 fw-bold px-0"
+		type="button"
+		data-bs-toggle="collapse"
+		data-bs-target="#explorerCollapse"
+		aria-expanded="true"
+		aria-controls="explorerCollapse"
+	>
+		<i class="bi bi-chevron-down fs-c2"></i> Portfolio
+	</button>
+	<div class="collapse ps-4 show fs-c2 text-secondary" id="explorerCollapse">
+		<div class="d-flex flex-column">
+			<a
+				*ngFor="let page of pages"
+				routerLink="{{ page.route }}"
+				class="text-decoration-none text-reset hstack"
+				routerLinkActive="active"
+				[routerLinkActiveOptions]="{ exact: true }"
+			>
+				<img src="{{ page.icon }}" width="20" height="20" />
+				<p class="ms-1 mb-1">{{ page.name }}</p></a
+			>
+		</div>
+	</div>
+</div>

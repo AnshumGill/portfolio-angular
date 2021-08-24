@@ -1,0 +1,54 @@
+.blinking-cursor {
+	color: var(--bs-primary);
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: var(--bs-primary);
+	}
+}
+
+svg.tea {
+	opacity: 0.5;
+}
+svg.tea #steamL {
+	stroke-dasharray: 13;
+	stroke-dashoffset: 13;
+	animation: steamLarge 2s infinite;
+}
+svg.tea #steamR {
+	stroke-dasharray: 9;
+	stroke-dashoffset: 9;
+	animation: steamSmall 2s infinite;
+}
+
+@keyframes steamLarge {
+	0% {
+		stroke-dashoffset: 13;
+		opacity: 1;
+	}
+	100% {
+		stroke-dashoffset: 39;
+		opacity: 0;
+	}
+}
+
+@keyframes steamSmall {
+	10% {
+		stroke-dashoffset: 9;
+		opacity: 1;
+	}
+	80% {
+		stroke-dashoffset: 27;
+		opacity: 0;
+	}
+	100% {
+		stroke-dashoffset: 27;
+		opacity: 0;
+	}
+}

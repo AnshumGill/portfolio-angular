@@ -1,0 +1,19 @@
+@media only screen and (max-width: 992px) {
+	.mainWindow {
+		width: calc(100vw - 3.5rem) !important;
+	}
+	app-sidebar {
+		width: 3.5rem;
+	}
+}
+@media only screen and (min-width: 993px) {
+	.mainWindow {
+		width: calc(100vw - 23rem);
+	}
+	app-sidebar {
+		width: 5rem;
+	}
+}
+app-explorer {
+	width: 18rem;
+}

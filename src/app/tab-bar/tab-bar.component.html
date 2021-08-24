@@ -1,0 +1,23 @@
+<div class="bg-dark iso w-100">
+	<div class="overlay-1"></div>
+	<div class="d-flex flex-row flex-nowrap overflow-auto">
+		<a
+			type="button"
+			class="
+				btn
+				border border-top-0 border-bottom-0 border-start-0 border-end-1 border-secondary
+				rounded-0
+				text-white
+				px-lg-3
+				text-nowrap
+				fs-c2
+			"
+			routerLinkActive="active"
+			[routerLinkActiveOptions]="{ exact: true }"
+			*ngFor="let page of pages"
+			routerLink="{{ page.route }}"
+		>
+			<img src="{{ page.icon }}" width="20" height="20" /> {{ page.name }} <i class="ms-2 bi bi-x-lg fs-c5"></i>
+		</a>
+	</div>
+</div>

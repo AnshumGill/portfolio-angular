@@ -1,0 +1,21 @@
+<div class="container-fluid mx-0 bg-dark h-100 text-white mono row p-2 p-md-4 justify-content-between">
+	<div class="col-6">
+		<div class="code">
+			<p class="mb-1"><span class="orange">.socials</span> {{ "{" }}</p>
+			<p class="mb-1" *ngFor="let social of socials">
+				<span class="ms-4"></span>{{ social.name }}: <a href="{{ social.href }}" class="orange">{{ social.value }}</a
+				>;
+			</p>
+			<p class="mb-1">{{ "}" }}</p>
+		</div>
+	</div>
+	<div class="col-12 col-md-4 align-self-md-end">
+		<lottie-player
+			autoplay
+			loop
+			mode="normal"
+			src="https://assets2.lottiefiles.com/packages/lf20_qumw8rhu.json"
+			class="img-fluid"
+		></lottie-player>
+	</div>
+</div>

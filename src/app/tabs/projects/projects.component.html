@@ -1,0 +1,22 @@
+<div class="container-fluid bg-dark h-100 mono p-2 p-md-4">
+	<div class="row mx-0">
+		<div class="col-12 col-md-4 col-lg-3 my-2 px-0" *ngFor="let project of projects">
+			<div class="m-2 card text-white shadow border-rounded card-overlay p-3">
+				<img src="{{ project.imgPath }}" class="border-rounded" />
+				<div class="card-body p-0 mt-2">
+					<p class="fs-6">{{ project.name }}</p>
+					<p class="fs-c3">{{ project.description }}</p>
+					<hr />
+					<div class="d-flex flex-row flex-wrap gap-2">
+						<button class="btn btn-outline-primary text-white fs-c4 rounded-pill" *ngFor="let tag of project.tags">{{ tag }}</button>
+					</div>
+					<div class="mt-2">
+						<a *ngFor="let link of project.links" class="text-decoration-none text-reset fs-6 fw-bold link" href="{{ link }}"
+							><span>Source Code</span></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

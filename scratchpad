@@ -1,0 +1,35 @@
+1. About Me Code Part
+    <div class="code">
+		<p class="mb-0">&lt;<span class="tag">html</span>&gt;</p>
+		<p class="mb-0"><span class="ms-3"></span>&lt;<span class="tag">head</span>&gt;</p>
+		<p class="mb-0">
+			<span class="ms-3"></span><span class="ms-3"></span>&lt;<span class="tag">title</span>&gt;{{ heading }}&lt;<span class="tag">/title</span
+			>&gt;
+		</p>
+		<p class="mb-0"><span class="ms-3"></span>&lt;<span class="tag">/head</span>&gt;</p>
+		<p class="mb-0"><span class="ms-3"></span>&lt;<span class="tag">body</span>&gt;</p>
+		<p class="mb-0">
+			<span class="ms-3"></span><span class="ms-3"></span>&lt;<span class="tag">h1</span><span class="prop"> class=</span
+			><span class="value">"text-orange"</span>&gt;{{ heading }}&lt;<span class="tag">/h1</span>&gt;
+		</p>
+		<p class="mb-0"><span class="ms-3"></span><span class="ms-3"></span>&lt;<span class="tag">p</span>&gt;{{ body }}</p>
+		<p class="mb-0"><span class="ms-3"></span><span class="ms-3"></span>&lt;<span class="tag">/p</span>&gt;</p>
+		<p class="mb-0"><span class="ms-3"></span>&lt;<span class="tag">/body</span>&gt;</p>
+		<p class="mb-0">&lt;<span class="tag">/html</span>&gt;</p>
+	</div>
+2. Contact Alternate Lottie
+    src="https://assets6.lottiefiles.com/private_files/lf30_WdTEui.json"
+3. EDA Projects
+new Project(
+	"EDA Projects",
+	"EDA was performed after data preprocessing and cleaning to find relevant correlations.",
+	"assets/ml.jpg",
+	[
+		"https://github.com/AnshumGill/python-ml-ecommerce",
+		"https://github.com/AnshumGill/python-ml-ecommerce",
+		"https://github.com/AnshumGill/python-ml-startups",
+		"https://github.com/AnshumGill/python-ml-startups/blob/master/Report.pdf",
+	],
+	["Python", "Pandas", "Numpy", "EDA", "Regression"],
+	"python"
+),
