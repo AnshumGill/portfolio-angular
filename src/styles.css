@@ -1,10 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
-[type="button"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+.pointer {
+	cursor: pointer;
 }
 .mono {
 	font-family: "Roboto Mono", monospace !important;
