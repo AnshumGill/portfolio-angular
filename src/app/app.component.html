@@ -1,14 +1,10 @@
-<div class="d-flex flex-column w-100">
-	<app-navbar class="flex-shrink-0"></app-navbar>
-	<div class="container-fluid px-0 flex-grow-1 content">
-		<div class="d-flex h-100">
-			<app-sidebar></app-sidebar>
-			<app-explorer class="d-none d-lg-block"></app-explorer>
-			<div class="d-flex flex-column w-100 mainWindow">
-				<app-tab-bar></app-tab-bar>
-				<app-tabs class="h-100"></app-tabs>
-			</div>
-		</div>
+<app-navbar class="flex-shrink-0"></app-navbar>
+<div class="d-flex flex-row content">
+	<app-sidebar></app-sidebar>
+	<app-explorer class="d-none d-lg-block"></app-explorer>
+	<div class="d-flex flex-column mainWindow">
+		<app-tab-bar></app-tab-bar>
+		<app-tabs class="h-100"></app-tabs>
 	</div>
-	<app-status-bar class="mt-auto flex-shrink-0"></app-status-bar>
 </div>
+<app-status-bar class="mt-auto flex-shrink-0"></app-status-bar>

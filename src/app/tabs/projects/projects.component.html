@@ -1,7 +1,7 @@
-<div class="container-fluid bg-dark h-100 mono p-2 p-md-4">
-	<div class="row mx-0">
-		<div class="col-12 col-md-4 col-lg-3 my-2 px-0" *ngFor="let project of projects">
-			<div class="m-2 card text-white shadow border-rounded card-overlay p-3 pointer">
+<div class="container-fluid bg-dark h-100 mono">
+	<div class="row">
+		<div class="col-12 col-md-4 col-lg-3 my-2" *ngFor="let project of projects">
+			<div class="card text-white shadow border-rounded card-overlay p-3 pointer">
 				<img src="{{ project.imgPath }}" class="border-rounded img-fluid" />
 				<div class="card-body p-0 mt-2">
 					<p class="fs-6">{{ project.name }}</p>

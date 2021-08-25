@@ -44,10 +44,16 @@
 						"polyfills": "src/polyfills.ts",
 						"tsConfig": "tsconfig.app.json",
 						"assets": ["src/favicon.ico", "src/assets"],
-						"styles": ["src/styles.css", "src/assets/css/bootstrap.css", "node_modules/bootstrap-icons/font/bootstrap-icons.css"],
+						"styles": [
+							"src/styles.css",
+							"src/assets/css/bootstrap.css",
+							"node_modules/bootstrap-icons/font/bootstrap-icons.css",
+							"node_modules/simplebar/dist/simplebar.min.css"
+						],
 						"scripts": [
 							"node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-							"node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"
+							"node_modules/@lottiefiles/lottie-player/dist/lottie-player.js",
+							"node_modules/simplebar/dist/simplebar.min.js"
 						]
 					},
 					"configurations": {

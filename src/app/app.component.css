@@ -24,5 +24,6 @@ app-status-bar {
 	height: 31px;
 }
 .content {
-	height: auto;
+	min-height: calc(100vh - 72px);
+	max-height: auto;
 }
