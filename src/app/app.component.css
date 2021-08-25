@@ -17,6 +17,12 @@
 app-explorer {
 	width: 18rem;
 }
-.height-100 {
-	min-height: 100%;
+app-navbar {
+	height: 41px;
+}
+app-status-bar {
+	height: 31px;
+}
+.content {
+	height: auto;
 }
