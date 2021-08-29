@@ -10,9 +10,13 @@
 					<div class="d-flex flex-row flex-wrap gap-2">
 						<button class="btn btn-outline-primary text-white fs-c4 rounded-pill" *ngFor="let tag of project.tags">{{ tag }}</button>
 					</div>
-					<div class="mt-2">
-						<a *ngFor="let link of project.links" class="text-decoration-none text-reset fs-6 fw-bold link" href="{{ link }}"
-							><span>Source Code</span></a
+					<div class="mt-2 d-flex flex-row flex-wrap">
+						<a
+							*ngFor="let link of project.links"
+							class="mx-2 text-decoration-none text-reset fs-6 fw-bold link"
+							href="{{ link.url }}"
+							target="_blank"
+							><span>{{ link.name }}</span></a
 						>
 					</div>
 				</div>

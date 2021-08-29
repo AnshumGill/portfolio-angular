@@ -8,10 +8,10 @@
 }
 @media only screen and (min-width: 993px) {
 	.mainWindow {
-		width: calc(100vw - 23rem);
+		width: calc(100vw - 22.5rem);
 	}
 	app-sidebar {
-		width: 5rem;
+		width: 4.5rem;
 	}
 }
 app-explorer {

@@ -33,3 +33,96 @@ new Project(
 	["Python", "Pandas", "Numpy", "EDA", "Regression"],
 	"python"
 ),
+4. CharJS
+<div class="row flex-grow-1">
+		<div class="col-12 col-md-6" *ngFor="let domain of domains">
+			<canvas [id]="domain.name"></canvas>
+		</div>
+	</div>
+import { Chart, registerables } from "chart.js";
+ngAfterViewInit() {
+		Chart.register(...registerables);
+		this.domains.forEach((domain) => {
+			var techNames: string[] = [];
+			var techValues: number[] = [];
+			var domainCanvas = document.getElementById(domain.name);
+			this.techs.forEach((tech) => {
+				if (tech.domain == domain) {
+					techNames.push(tech.name);
+					techValues.push(tech.value);
+				}
+			});
+			if (techNames.length > 0) {
+				this.makeChart(domainCanvas, domain, techNames!, techValues!);
+			}
+		});
+	}
+
+makeChart(canvas: any, domain: Domain, techNames: string[], techValues: number[]) {
+		var background_1 = canvas.getContext("2d").createLinearGradient(0, 0, 600, 0);
+		background_1.addColorStop(0, domain.color1);
+		background_1.addColorStop(1, domain.color2);
+
+		var background_2 = canvas.getContext("2d").createLinearGradient(0, 0, 600, 0);
+		background_2.addColorStop(0, domain.color2);
+		background_2.addColorStop(1, domain.color1);
+
+		const chart = new Chart(canvas.getContext("2d"), {
+			type: "bar",
+			data: {
+				labels: techNames,
+				datasets: [
+					{
+						data: techValues,
+						// backgroundColor: ["rgba(255, 99, 132, 1)", "rgba(255, 159, 64, 1)", "rgba(255, 205, 86, 1)", "rgba(75, 192, 192, 1)"],
+						backgroundColor: [background_1],
+						borderRadius: [10],
+						borderWidth: 0,
+						// borderSkipped: false,
+						hoverBackgroundColor: [background_2],
+						// barThickness: 40,
+					},
+				],
+			},
+			options: {
+				responsive: true,
+				indexAxis: "y",
+				maintainAspectRatio: false,
+				layout: {
+					padding: 10,
+				},
+				plugins: {
+					tooltip: {
+						enabled: false,
+					},
+					legend: {
+						display: false,
+					},
+					title: {
+						display: false,
+					},
+				},
+				scales: {
+					x: {
+						display: false,
+						grid: {
+							drawBorder: false,
+							display: false,
+						},
+					},
+					y: {
+						display: true,
+						ticks: {
+							// mirror: true,
+							z: 10,
+							color: "#FFFFFF",
+						},
+						grid: {
+							drawBorder: false,
+							display: false,
+						},
+					},
+				},
+			},
+		});
+	}

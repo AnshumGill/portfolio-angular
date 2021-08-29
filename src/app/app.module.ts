@@ -13,6 +13,7 @@ import { HomeComponent } from "./tabs/home/home.component";
 import { AboutComponent } from "./tabs/about/about.component";
 import { ContactComponent } from "./tabs/contact/contact.component";
 import { ProjectsComponent } from "./tabs/projects/projects.component";
+import { DomainService } from "./tabs/about/domain.service";
 
 @NgModule({
 	declarations: [
@@ -29,7 +30,7 @@ import { ProjectsComponent } from "./tabs/projects/projects.component";
 		ProjectsComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
-	providers: [],
+	providers: [DomainService],
 	bootstrap: [AppComponent],
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
