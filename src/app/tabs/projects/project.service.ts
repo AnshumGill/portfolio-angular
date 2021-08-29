@@ -13,7 +13,7 @@ export class ProjectService {
 			"Image Classification using Random Forest and SVM Classifier.",
 			"assets/ml_s.jpg",
 			[new Link("Source Code", "https://github.com/AnshumGill/python-ml-flower")],
-			["Python", "Machine Learning", "Random Forest", "SVM", "Logistic Regression"]
+			["Python", "Machine Learning", "Random Forest", "SVM", "Regression"]
 		),
 		new Project(
 			"Smart Parking Solution",
