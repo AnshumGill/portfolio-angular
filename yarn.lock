@@ -1375,11 +1375,6 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.19.tgz#538e61fc220f77ae4a4663c3d8c3cb391365c209"
   integrity sha512-niAuZrwrjKck4+XhoCw6AAVQBENHftpXw9F4ryk66fTgYaKQ53R4FI7c9vUGGw5vQis1HKBHDR1gcYI/Bq1xvw==
 
-"@types/overlayscrollbars@^1.12.1":
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/@types/overlayscrollbars/-/overlayscrollbars-1.12.1.tgz#fb637071b545834fb12aea94ee309a2ff4cdc0a8"
-  integrity sha512-V25YHbSoKQN35UasHf0EKD9U2vcmexRSp78qa8UglxFH8H3D+adEa9zGZwrqpH4TdvqeMrgMqVqsLB4woAryrQ==
-
 "@types/pako@^1.0.1":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@types/pako/-/pako-1.0.2.tgz#17c9b136877f33d9ecc8e73cd26944f1f6dd39a1"
@@ -2487,6 +2482,11 @@ core-js@3.16.0:
   version "3.16.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.16.0.tgz#1d46fb33720bc1fa7f90d20431f36a5540858986"
   integrity sha512-5+5VxRFmSf97nM8Jr2wzOwLqRo6zphH2aX+7KsAUONObyzakDNq2G/bgbhinxB4PoV9L3aXQYhiDKyIKWd2c8g==
+
+core-js@^3.6.4:
+  version "3.17.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.17.1.tgz#b39e086f413789cf2ca4680c4ecd1b36a50ba277"
+  integrity sha512-C8i/FNpVN2Ti89QIJcFn9ZQmnM+HaAQr2OpE+ja3TRM9Q34FigsGlAVuwPGkIgydSVClo/1l1D1grP8LVt9IYA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -4579,6 +4579,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -5316,11 +5321,6 @@ os-tmpdir@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
-
-overlayscrollbars@^1.13.1:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/overlayscrollbars/-/overlayscrollbars-1.13.1.tgz#0b840a88737f43a946b9d87875a2f9e421d0338a"
-  integrity sha512-gIQfzgGgu1wy80EB4/6DaJGHMEGmizq27xHIESrzXq0Y/J0Ay1P3DWk6tuVmEPIZH15zaBlxeEJOqdJKmowHCQ==
 
 p-defer@^1.0.0:
   version "1.0.0"
@@ -6805,6 +6805,15 @@ smart-buffer@^4.1.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.2.0.tgz#6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae"
   integrity sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==
+
+smooth-scrollbar@^8.6.3:
+  version "8.6.3"
+  resolved "https://registry.yarnpkg.com/smooth-scrollbar/-/smooth-scrollbar-8.6.3.tgz#411489e29cc1e7e10ad311511c67ea1fe5197cce"
+  integrity sha512-YTGK6+Vhw53sbdFVD8FSr+z2Ugp7hGAxKD3tNtYFq23fGn/oknWTwpWxym5aCYMXdzNNeKtiWbdu5op5bauzAw==
+  dependencies:
+    core-js "^3.6.4"
+    lodash-es "^4.17.21"
+    tslib "^1.10.0"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
