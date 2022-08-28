@@ -13,8 +13,8 @@ import { DomainService } from "./domain.service";
 export class AboutComponent implements OnInit {
 	heading: string = "About Me";
 	body: string =
-		"Hi! I'm a B.Tech CSE Graduate currently working at Hughes Systique as an Associate Engineer.\
-        I have knowledge in various domains such as ML, Deep Learning, Neural Networks, Frontend Development, IoT etc.\
+		"Hi! I'm a B.Tech CSE Graduate currently working at Airbnb as an Ops Engineer.\
+        I have knowledge in various domains such as DevOps, FrontEnd Frameworks, Backend Frameworks etc.\
         I've done most of my development in Python but am open to learn any language.";
 	techs: Tech[] = [];
 	domains: Domain[] = [];
