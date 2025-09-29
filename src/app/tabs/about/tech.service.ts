@@ -66,5 +66,13 @@ export class TechService {
         new Tech("Helm", 5, this.domainService.getDomainbyName("CI/CD")),
 
         // Languages
+        new Tech("Python", 10, this.domainService.getDomainbyName("Languages")),
+        new Tech("Go", 6, this.domainService.getDomainbyName("Languages")),
+        new Tech("Java", 5, this.domainService.getDomainbyName("Languages")),
+        new Tech(
+            "TypeScript",
+            6,
+            this.domainService.getDomainbyName("Languages"),
+        ),
     ];
 }
