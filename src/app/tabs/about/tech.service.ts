@@ -4,29 +4,67 @@ import { DomainService } from "./domain.service";
 
 @Injectable()
 export class TechService {
-	constructor(private domainService: DomainService) {}
-	techs = [
-		new Tech("Bootstrap", 10, this.domainService.getDomainbyName("Frontend")),
-		new Tech("Angular", 6, this.domainService.getDomainbyName("Frontend")),
-		new Tech("AngularJS", 5, this.domainService.getDomainbyName("Frontend")),
-		new Tech("Liquid", 8, this.domainService.getDomainbyName("Frontend")),
-		new Tech("jQuery", 7, this.domainService.getDomainbyName("Frontend")),
-		new Tech("Python", 10, this.domainService.getDomainbyName("Languages")),
-		new Tech("Java", 5, this.domainService.getDomainbyName("Languages")),
-		new Tech("C", 7, this.domainService.getDomainbyName("Languages")),
-		new Tech("C++", 6, this.domainService.getDomainbyName("Languages")),
-		new Tech("HTML", 9, this.domainService.getDomainbyName("Languages")),
-		new Tech("CSS", 9, this.domainService.getDomainbyName("Languages")),
-		new Tech("JavaScript", 7, this.domainService.getDomainbyName("Languages")),
-		new Tech("Bash", 9, this.domainService.getDomainbyName("Languages")),
-		new Tech("Docker", 9, this.domainService.getDomainbyName("DevOps")),
-		new Tech("Ansible", 9, this.domainService.getDomainbyName("DevOps")),
-		new Tech("Kubernetes", 5, this.domainService.getDomainbyName("DevOps")),
-		new Tech("Prometheus", 9, this.domainService.getDomainbyName("DevOps")),
-		new Tech("Grafana", 7, this.domainService.getDomainbyName("DevOps")),
-		new Tech("AlertManager", 8, this.domainService.getDomainbyName("DevOps")),
-		new Tech("Django", 10, this.domainService.getDomainbyName("Backend")),
-		new Tech("Flask", 10, this.domainService.getDomainbyName("Backend")),
-		new Tech("SpringBoot", 8, this.domainService.getDomainbyName("Backend")),
-	];
+    constructor(private domainService: DomainService) {}
+    techs = [
+        // Observability
+        new Tech(
+            "Prometheus",
+            10,
+            this.domainService.getDomainbyName("Monitoring and Observability"),
+        ),
+        new Tech(
+            "Grafana",
+            9,
+            this.domainService.getDomainbyName("Monitoring and Observability"),
+        ),
+        new Tech(
+            "AlertManager",
+            8,
+            this.domainService.getDomainbyName("Monitoring and Observability"),
+        ),
+        new Tech(
+            "OpenSearch",
+            6,
+            this.domainService.getDomainbyName("Monitoring and Observability"),
+        ),
+        new Tech(
+            "Vector",
+            7,
+            this.domainService.getDomainbyName("Monitoring and Observability"),
+        ),
+        // Clouds and Infrastructure
+        new Tech(
+            "AWS",
+            9,
+            this.domainService.getDomainbyName("Clouds and Infrastructure"),
+        ),
+        new Tech(
+            "Kubernetes",
+            7,
+            this.domainService.getDomainbyName("Clouds and Infrastructure"),
+        ),
+        new Tech(
+            "Docker",
+            8,
+            this.domainService.getDomainbyName("Clouds and Infrastructure"),
+        ),
+        new Tech(
+            "GCP",
+            6,
+            this.domainService.getDomainbyName("Clouds and Infrastructure"),
+        ),
+        new Tech(
+            "Azure",
+            4,
+            this.domainService.getDomainbyName("Clouds and Infrastructure"),
+        ),
+
+        // CICD
+        new Tech("Terraform", 9, this.domainService.getDomainbyName("CI/CD")),
+        new Tech("Ansible", 8, this.domainService.getDomainbyName("CI/CD")),
+        new Tech("ArgoCd", 7, this.domainService.getDomainbyName("CI/CD")),
+        new Tech("Helm", 5, this.domainService.getDomainbyName("CI/CD")),
+
+        // Languages
+    ];
 }
